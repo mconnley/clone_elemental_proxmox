@@ -66,4 +66,4 @@ currentDateTime=$(date '+%Y-%m-%d %H:%M:%S')
 
 qm clone $templateId $newId --description "Elemental $longNodeType Node, provisioned at $currentDateTime" --name $newHostname --storage $storageName --full true
 qm resize $newId scsi0 $diskSize
-qm set $newId --smbios1 serial=$newHostname
+qm set $newId --smbios1 serial=$newHostname --tags plb_anti_affinity_$nodeType

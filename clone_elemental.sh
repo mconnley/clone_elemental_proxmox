@@ -60,7 +60,7 @@ elif [[ "$nodeType" == "mgr" ]]; then
     longNodeType="Manager"
 fi
 
-echo "Creating new longNodeType node $newHostname from Template ID $templateId with $diskSize drive on $storageName..."
+echo "Creating new $longNodeType node $newHostname from Template ID $templateId with $diskSize drive on $storageName..."
 
 currentDateTime=$(date '+%Y-%m-%d %H:%M:%S')
 

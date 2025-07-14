@@ -1,4 +1,6 @@
 # clone_elemental_proxmox
+v0.0.1
+
 Quickly clone ElementalOS templates in Proxmox for Rancher Deployment
 
 
